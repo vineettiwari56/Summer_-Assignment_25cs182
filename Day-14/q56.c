@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main()
+{
+    int a[5], i, j;
+    printf("enter 5 number:\n");
+    for(i=0;i<5;i++)
+    scanf("%d",&a[i]);
+    printf("duplicate element are:\n");
+    for ( i = 0; i < 5; i++)
+    {
+        for ( j = i+1; j < 5; j++)
+        {
+            if(a[i]==a[j])
+            printf(" %d ", a[i]);
+        }
+    }
+    return 0;
+}
